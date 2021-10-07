@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
-    --color1: #117AA7;
+    --color1: #007EA7;
     --icon_size: 120px;
 }
 
@@ -78,9 +78,26 @@ a:hover, #currentpage:hover {
 }
 
 #socials_div {
-    width: 400px;
-    margin: 0 auto;
-    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    margin: 10vh;
+    gap: 2vh;
+}
+
+#socials_div a {
+    display: block;
+    font-size: 50px;
+    padding: 2vw;
+    background: var(--color1);
+    color: white;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+#socials_div a:hover {
+    background: black;
+    text-decoration: none;
+    transition: 0.1s;
 }
 
 ul {
@@ -97,16 +114,25 @@ ul {
 div.project {
     width: 25vw;
     height: 25vw;
-    background: black;
+    background: var(--color1);
     color: white;
-    font-size: 24px;
+    font-size: 30px;
     margin: auto;
-    padding: 2px;
+    padding: 0;
     border-radius: 15px;
+    transition: 0.2s;
+}
+
+div.project:hover, div.project a:hover {
+    background: black;
+    transition: 0.1s;
+    color: white;
+    text-decoration: none;
 }
 
 div.project a {
     width: inherit;
+    font-weight: 600;
 }
 
 div.project a p {
